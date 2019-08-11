@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/valentin_muller_rain"
+    tools:context=".FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/messageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="#CDFFFFFF"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:paddingLeft="32dp"
+                android:paddingTop="16dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="16dp"
+                android:text="YES/NO"
+                android:textColor="@android:color/black"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/locationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="#CDFFFFFF"
+                android:gravity="center"
+                android:keepScreenOn="true"
+                android:onClick="clickRefresh"
+                android:paddingLeft="32dp"
+                android:paddingTop="16dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="16dp"
+                android:text="YES/NO"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+</FrameLayout>
